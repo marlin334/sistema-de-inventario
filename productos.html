@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mantenimiento de Productos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Mantenimiento de Productos</h2>
+    <form id="productoForm">
+      <input type="hidden" id="productoId">
+      <label for="nombre">Nombre del producto:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" required></select>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" required min="0">
+
+      <button type="submit">Guardar Producto</button>
+    </form>
+
+    <h3>Listado de Productos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Cantidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProductos"></tbody>
+    </table>
+
+    <br>
+    <a href="menu.html" class="btn">Volver al Menú</a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/productos.js"></script>
+</body>
+</html>

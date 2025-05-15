@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mantenimiento de Categorías</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Mantenimiento de Categorías</h2>
+
+    <form id="categoriaForm">
+      <input type="hidden" id="categoriaId">
+      <label for="nombreCategoria">Nombre de la categoría:</label>
+      <input type="text" id="nombreCategoria" required>
+      <button type="submit">Guardar Categoría</button>
+    </form>
+
+    <h3>Listado de Categorías</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaCategorias"></tbody>
+    </table>
+
+    <br>
+    <a href="menu.html" class="btn">Volver al Menú</a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/categorias.js"></script>
+</body>
+</html>
